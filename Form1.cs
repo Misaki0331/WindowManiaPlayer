@@ -208,6 +208,27 @@ namespace WindowManiaPlayer
         {
             filedialog.Filter = "譜面ファイル (*.osu)|*.osu";
             filedialog.ShowDialog();
+           
+        }
+
+        private void link_github_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Misaki0331");
+        }
+
+        private void link_twitter_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://twitter.com/0x7FF");
+
+        }
+
+        private void link_repository_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Misaki0331/WindowManiaPlayer");
+        }
+
+        private void filedialog_FileOk(object sender, CancelEventArgs e)
+        {
             textBox1.Text = filedialog.FileName;
             endtime = 0;
             StreamReader sr = new StreamReader(
@@ -228,7 +249,8 @@ namespace WindowManiaPlayer
                     break;
 
                 }
-                if(strs[i].StartsWith("AudioFilename")){
+                if (strs[i].StartsWith("AudioFilename"))
+                {
                     SoundFile = strs[i];
                     while (!SoundFile.StartsWith(":"))
                     {
@@ -261,22 +283,6 @@ namespace WindowManiaPlayer
                 if (endtime < notesObjects[count].Time + notesObjects[count].Longs) endtime = notesObjects[count].Time + notesObjects[count].Longs;
                 counts = count;
             }
-        }
-
-        private void link_github_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/Misaki0331");
-        }
-
-        private void link_twitter_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://twitter.com/0x7FF");
-
-        }
-
-        private void link_repository_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/Misaki0331/WindowManiaPlayer");
         }
     }
 }

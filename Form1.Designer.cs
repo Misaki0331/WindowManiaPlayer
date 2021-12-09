@@ -50,6 +50,7 @@ namespace WindowManiaPlayer
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 25);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(359, 19);
             this.textBox1.TabIndex = 0;
             // 
@@ -72,6 +73,10 @@ namespace WindowManiaPlayer
             this.beatmap.Text = "譜面ファイル";
             this.beatmap.UseVisualStyleBackColor = true;
             this.beatmap.Click += new System.EventHandler(this.beatmap_Click);
+            // 
+            // filedialog
+            // 
+            this.filedialog.FileOk += new System.ComponentModel.CancelEventHandler(this.filedialog_FileOk);
             // 
             // IsDebugMode
             // 
