@@ -40,7 +40,7 @@ namespace WindowManiaPlayer
             this.displaytext.Name = "displaytext";
             this.displaytext.Size = new System.Drawing.Size(281, 240);
             this.displaytext.TabIndex = 0;
-            this.displaytext.Text = "Window : 300\r\nFPS : 0\r\nUpdate: 0ms\r\n0:00/0:00\r\n0000/0000";
+            this.displaytext.Text = "Window : 300\r\nFPS : 0\r\nUpdate: 0\r\n0:00/0:00\r\n0000/0000";
             // 
             // debug
             // 

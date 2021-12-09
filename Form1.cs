@@ -77,6 +77,7 @@ namespace WindowManiaPlayer
             int currentwindowcount = 0;
             bool started = false;
             int tempsec = 0;
+            int shortsize = (int)numericUpDown2.Value;
             int notecounts = 0;
             while (timer.ElapsedMilliseconds - 3000 < endtime||currentwindowcount>0)
             {
@@ -106,7 +107,7 @@ namespace WindowManiaPlayer
                                     }
                                     else
                                     {
-                                        notewindow[i].Size = new Size(150, notesObjects[notecount].Longs * 2 + 52);
+                                        notewindow[i].Size = new Size(150, notesObjects[notecount].Longs * 2 + shortsize);
                                     }
                                     break;
                                 }
@@ -134,7 +135,7 @@ namespace WindowManiaPlayer
                             }
                             else
                             {
-                                notewindow[i].Location = new Point((width - 512*2) / 2 + notesObjects[notewindow[i].NoteNumber].Keys * 2 - 75, height - (notesObjects[notewindow[i].NoteNumber].Time - now) * 2 - 50);
+                                notewindow[i].Location = new Point((width - 512*2) / 2 + notesObjects[notewindow[i].NoteNumber].Keys * 2 - 75, height - (notesObjects[notewindow[i].NoteNumber].Time - now) * 2 - shortsize);
                             }
                         }
                         else
@@ -142,16 +143,16 @@ namespace WindowManiaPlayer
                             if (notesObjects[notewindow[i].NoteNumber].Time + notesObjects[notewindow[i].NoteNumber].Longs - now < 0)
                             {
                                 notewindow[i].NoteNumber = -1;
-                                notewindow[i].Size = new Size(150, 52);
+                                notewindow[i].Size = new Size(150, shortsize);
                                 notewindow[i].Hide();
                                 notecounts++;
                                 currentwindowcount--;
                             }
                             else
                             {
-                                if (notesObjects[notewindow[i].NoteNumber].Longs >= (height-52)/2)
+                                if (notesObjects[notewindow[i].NoteNumber].Longs >= (height- shortsize) /2)
                                 {
-                                    if (now >= notesObjects[notewindow[i].NoteNumber].Time && now < notesObjects[notewindow[i].NoteNumber].Time + notesObjects[notewindow[i].NoteNumber].Longs - (height - 52) / 2)
+                                    if (now >= notesObjects[notewindow[i].NoteNumber].Time && now < notesObjects[notewindow[i].NoteNumber].Time + notesObjects[notewindow[i].NoteNumber].Longs - (height - shortsize) / 2)
                                     {
                                         notewindow[i].Location = new Point((width - 512*2) / 2 + notesObjects[notewindow[i].NoteNumber].Keys * 2 - 75, 0);
                                     }
@@ -159,18 +160,18 @@ namespace WindowManiaPlayer
                                     {
                                         if (now > notesObjects[notewindow[i].NoteNumber].Time)
                                         {
-                                            notewindow[i].Location = new Point((width - 512*2) / 2 + notesObjects[notewindow[i].NoteNumber].Keys * 2 - 75, height - (notesObjects[notewindow[i].NoteNumber].Time + notesObjects[notewindow[i].NoteNumber].Longs - now) * 2 - 52);
+                                            notewindow[i].Location = new Point((width - 512*2) / 2 + notesObjects[notewindow[i].NoteNumber].Keys * 2 - 75, height - (notesObjects[notewindow[i].NoteNumber].Time + notesObjects[notewindow[i].NoteNumber].Longs - now) * 2 - shortsize);
                                         }
                                         else
                                         {
-                                            notewindow[i].Location = new Point((width - 512*2) / 2 + notesObjects[notewindow[i].NoteNumber].Keys * 2 - 75, height- (notesObjects[notewindow[i].NoteNumber].Time + (height - 52) / 2 - now) * 2 - 50);
+                                            notewindow[i].Location = new Point((width - 512*2) / 2 + notesObjects[notewindow[i].NoteNumber].Keys * 2 - 75, height- (notesObjects[notewindow[i].NoteNumber].Time + (height - shortsize) / 2 - now) * 2 - 50);
                                         }
                                     }
 
                                 }
                                 else
                                 {
-                                    notewindow[i].Location = new Point((width - 512*2) / 2 + notesObjects[notewindow[i].NoteNumber].Keys * 2 - 75, height - (notesObjects[notewindow[i].NoteNumber].Time + notesObjects[notewindow[i].NoteNumber].Longs - now) * 2 - 52);
+                                    notewindow[i].Location = new Point((width - 512*2) / 2 + notesObjects[notewindow[i].NoteNumber].Keys * 2 - 75, height - (notesObjects[notewindow[i].NoteNumber].Time + notesObjects[notewindow[i].NoteNumber].Longs - now) * 2 - shortsize);
                                 }
 
                             }
@@ -192,7 +193,7 @@ namespace WindowManiaPlayer
                             lps += tmplp[i];
                         }
                     }
-                    dw.displaytext.Text = $"Window : {currentwindowcount}\nFPS : {lps}\nUpdate : {timer.ElapsedMilliseconds-tempsec}ms\n{now / 1000 / 60}:{(now / 1000 % 60).ToString().PadLeft(2, '0')}/{endtime/1000/60}:{(endtime/1000%60).ToString().PadLeft(2,'0')}\n{notecounts}/{notesObjects.Length}";
+                    dw.displaytext.Text = $"Window : {currentwindowcount}\nFPS : {lps}\nUpdate : {timer.ElapsedMilliseconds-tempsec}\n{now / 1000 / 60}:{(now / 1000 % 60).ToString().PadLeft(2, '0')}/{endtime/1000/60}:{(endtime/1000%60).ToString().PadLeft(2,'0')}\n{notecounts}/{notesObjects.Length}";
                     tempsec = (int)timer.ElapsedMilliseconds;
                 }
                 

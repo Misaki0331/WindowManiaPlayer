@@ -40,7 +40,10 @@ namespace WindowManiaPlayer
             this.link_github = new System.Windows.Forms.Button();
             this.link_twitter = new System.Windows.Forms.Button();
             this.link_repository = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -83,7 +86,7 @@ namespace WindowManiaPlayer
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(240, 50);
+            this.numericUpDown1.Location = new System.Drawing.Point(187, 50);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -101,7 +104,7 @@ namespace WindowManiaPlayer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(158, 52);
+            this.label1.Location = new System.Drawing.Point(105, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 12);
             this.label1.TabIndex = 8;
@@ -146,11 +149,44 @@ namespace WindowManiaPlayer
             this.link_repository.UseVisualStyleBackColor = true;
             this.link_repository.Click += new System.EventHandler(this.link_repository_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(242, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 12);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "ショートサイズ";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(316, 51);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(49, 19);
+            this.numericUpDown2.TabIndex = 14;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 80);
+            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.link_repository);
             this.Controls.Add(this.link_twitter);
             this.Controls.Add(this.link_github);
@@ -167,6 +203,7 @@ namespace WindowManiaPlayer
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window Mania Player";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,6 +222,8 @@ namespace WindowManiaPlayer
         private System.Windows.Forms.Button link_github;
         private System.Windows.Forms.Button link_twitter;
         private System.Windows.Forms.Button link_repository;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
     }
 }
 
