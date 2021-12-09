@@ -1,0 +1,15 @@
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\bin\Release\WindowManiaPlayer.exe.config
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\bin\Release\WindowManiaPlayer.exe
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\bin\Release\WindowManiaPlayer.pdb
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\Interop.MediaPlayer.dll
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\Interop.WMPLib.dll
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.csproj.ResolveComReference.cache
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.Form1.resources
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.notes.resources
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.Properties.Resources.resources
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.csproj.GenerateResource.cache
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.csproj.CoreCompileInputs.cache
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.exe
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.pdb
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.csproj.AssemblyReference.cache
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Release\WindowManiaPlayer.debug.resources

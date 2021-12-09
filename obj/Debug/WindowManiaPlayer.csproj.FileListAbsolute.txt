@@ -1,0 +1,14 @@
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\bin\Debug\WindowManiaPlayer.exe.config
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\bin\Debug\WindowManiaPlayer.exe
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\bin\Debug\WindowManiaPlayer.pdb
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\WindowManiaPlayer.csproj.AssemblyReference.cache
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\WindowManiaPlayer.Form1.resources
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\WindowManiaPlayer.notes.resources
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\WindowManiaPlayer.Properties.Resources.resources
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\WindowManiaPlayer.csproj.GenerateResource.cache
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\WindowManiaPlayer.csproj.CoreCompileInputs.cache
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\WindowManiaPlayer.exe
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\WindowManiaPlayer.pdb
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\Interop.WMPLib.dll
+C:\Users\Misaki\source\repos\WindowManiaPlayer\WindowManiaPlayer\obj\Debug\WindowManiaPlayer.csproj.ResolveComReference.cache
