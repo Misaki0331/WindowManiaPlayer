@@ -38,15 +38,15 @@ namespace WindowManiaPlayer
             this.displaytext.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.displaytext.Location = new System.Drawing.Point(0, 0);
             this.displaytext.Name = "displaytext";
-            this.displaytext.Size = new System.Drawing.Size(281, 192);
+            this.displaytext.Size = new System.Drawing.Size(281, 240);
             this.displaytext.TabIndex = 0;
-            this.displaytext.Text = "Window : 300\r\nFPS : 0\r\n0:00/0:00\r\n0000/0000";
+            this.displaytext.Text = "Window : 300\r\nFPS : 0\r\nUpdate: 0ms\r\n0:00/0:00\r\n0000/0000";
             // 
             // debug
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 194);
+            this.ClientSize = new System.Drawing.Size(325, 239);
             this.Controls.Add(this.displaytext);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;

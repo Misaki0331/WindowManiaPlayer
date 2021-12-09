@@ -76,6 +76,7 @@ namespace WindowManiaPlayer
             int notecount = 0;
             int currentwindowcount = 0;
             bool started = false;
+            int tempsec = 0;
             int notecounts = 0;
             while (timer.ElapsedMilliseconds - 3000 < endtime||currentwindowcount>0)
             {
@@ -191,7 +192,8 @@ namespace WindowManiaPlayer
                             lps += tmplp[i];
                         }
                     }
-                    dw.displaytext.Text = $"Window : {currentwindowcount}\nFPS : {lps}\n{now / 1000 / 60}:{(now / 1000 % 60).ToString().PadLeft(2, '0')}/{endtime/1000/60}:{(endtime/1000%60).ToString().PadLeft(2,'0')}\n{notecounts}/{notesObjects.Length}";
+                    dw.displaytext.Text = $"Window : {currentwindowcount}\nFPS : {lps}\nUpdate : {timer.ElapsedMilliseconds-tempsec}ms\n{now / 1000 / 60}:{(now / 1000 % 60).ToString().PadLeft(2, '0')}/{endtime/1000/60}:{(endtime/1000%60).ToString().PadLeft(2,'0')}\n{notecounts}/{notesObjects.Length}";
+                    tempsec = (int)timer.ElapsedMilliseconds;
                 }
                 
             }
